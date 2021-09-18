@@ -56,7 +56,7 @@ class DatePicker extends InputWidget
     public function init()
     {
         parent::init();
-        
+        $this->options['autocomplete'] = 'off';
         if ($this->size) {
             Html::addCssClass($this->options, 'input-' . $this->size);
             Html::addCssClass($this->containerOptions, 'input-group-' . $this->size);
